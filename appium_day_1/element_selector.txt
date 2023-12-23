@@ -1,0 +1,25 @@
+Third 'Create' button in External Storage
+ SELECTOR: (xpath) (//android.widget.Button[@content-desc="Create"])[3]
+ no accessibility id provided.
+
+Arabic text in Unicode section
+ SELECTOR: (xpath) //android.widget.TextView[@resource-id="android:id/text1" and @text="عربي"]
+ no accessibility id provided. 
+
+FingerPaint page
+ SELECTOR: (accessibility id) FingerPaint
+
+'Vibrate' button in Morse Code section
+ SELECTOR: (accessibility id) Vibrate
+
+'New Photo' button in Views/Lists/Photos section
+ SELECTOR: (accessibility id) New photo
+
+Selection Mode page in Views/Lists section
+ SELECTOR: (accessibility id) 15. Selection Mode
+
+Activate Items page in Views/Lists section
+ SELECTOR: (accessibility id) 17. Activate items 
+
+Picker page in Views section
+ SELECTOR: (accessibility id) Picker
