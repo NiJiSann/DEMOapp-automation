@@ -37,6 +37,7 @@ def fill_password_name(driver: WebDriver):
 def wait_progress_dialog(driver: WebDriver):
     wait = WebDriverWait(driver, 20)
     driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Progress dialog').click()
+    wait.until(ec.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, 'List dialog')))
     list_dialog = wait.until(ec.element_to_be_clickable((AppiumBy.ACCESSIBILITY_ID, 'List dialog')))
     list_dialog.click()
     driver.find_element(AppiumBy.XPATH, '//android.widget.TextView[@resource-id="android:id/text1" and @text="Command four"]').click()
