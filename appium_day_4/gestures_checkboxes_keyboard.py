@@ -59,7 +59,7 @@ def find_selection_mode(driver: WebDriver):
 
 def tap_on_random_element(driver: WebDriver):
     elements = driver.find_elements(AppiumBy.XPATH, Locators.any_ctv)
-    random_ctv = elements[random.randint(0, len(elements))]
+    random_ctv = elements[random.randint(0, len(elements)-1)]
     driver.tap([get_center_of_elem(random_ctv)])
     for element in elements:
         if element.get_attribute('checked') == 'true':
@@ -69,7 +69,7 @@ def tap_on_random_element(driver: WebDriver):
 
 def long_press(driver: WebDriver):
     elements = driver.find_elements(AppiumBy.XPATH, Locators.any_ctv)
-    random_ctv = elements[random.randint(0, len(elements))]
+    random_ctv = elements[random.randint(0, len(elements)-1)]
     driver.tap([get_center_of_elem(random_ctv)], 1000)
     if random_ctv.get_attribute('checked') != 'true':
         return 1
@@ -78,7 +78,7 @@ def long_press(driver: WebDriver):
 
 def tick_all_elem(driver: WebDriver):
     elements = driver.find_elements(AppiumBy.XPATH, Locators.any_ctv)
-    random_ctv = elements[random.randint(0, len(elements))]
+    random_ctv = elements[random.randint(0, len(elements)-1)]
     driver.tap([get_center_of_elem(random_ctv)], 100)
     for element in elements:
         element.click()

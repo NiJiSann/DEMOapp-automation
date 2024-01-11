@@ -24,6 +24,7 @@ def get_driver_with_gallery():
         language='en',
         locale='US'
     )
+
     options = UiAutomator2Options().load_capabilities(capabilities)
     return webdriver.Remote("http://127.0.0.1:4723", options=options)
 

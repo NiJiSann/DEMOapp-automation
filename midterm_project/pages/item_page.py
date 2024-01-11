@@ -1,0 +1,5 @@
+price_tv_aid = 'product price'
+red_color_vg_aid = 'red circle'
+counter_minus_vg_aid = 'counter minus button'
+counter_plus_vg_aid = 'counter plus button'
+add_to_cart_vg_aid = 'Add To Cart button'
